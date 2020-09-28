@@ -16,5 +16,16 @@ namespace faktorial
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            label4.Text = null;
+           
+            int n = Convert.ToInt32(textBox2.Text);
+            long fakt = 1;
+            for (int i = 2; i <= n; i++) fakt *= i;
+            label4.Text = fakt.ToString();
+      
+        }
     }
 }
